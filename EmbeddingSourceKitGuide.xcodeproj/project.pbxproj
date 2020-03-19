@@ -7,24 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BF4679A235B778F00EFD089 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BF46799235B778F00EFD089 /* main.c */; };
+		2B693876241D925C00CF7A1A /* SwiftMetaEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B693874241D925C00CF7A1A /* SwiftMetaEntity.cpp */; };
+		2B868D7E2422CD9000AFD2D6 /* TypeEntities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868D7C2422CD9000AFD2D6 /* TypeEntities.cpp */; };
+		2B868D83242370CD00AFD2D6 /* MetaFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868D81242370CD00AFD2D6 /* MetaFactory.cpp */; };
+		2B868D8724238A3600AFD2D6 /* TypeFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868D8624238A3600AFD2D6 /* TypeFactory.cpp */; };
+		2B868DAD2423ED2200AFD2D6 /* Demangler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868DAB2423ED2200AFD2D6 /* Demangler.cpp */; };
+		2BF4679A235B778F00EFD089 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BF46799235B778F00EFD089 /* main.mm */; };
+		2BF467A8235B864D00EFD089 /* sourcekitd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF467A7235B864D00EFD089 /* sourcekitd.framework */; };
+		2BF467A9235B865600EFD089 /* sourcekitd.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF467A7235B864D00EFD089 /* sourcekitd.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2BF46794235B778F00EFD089 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
+				2BF467A9235B865600EFD089 /* sourcekitd.framework in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B693874241D925C00CF7A1A /* SwiftMetaEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SwiftMetaEntity.cpp; sourceTree = "<group>"; };
+		2B693875241D925C00CF7A1A /* SwiftMetaEntity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SwiftMetaEntity.hpp; sourceTree = "<group>"; };
+		2B868D7C2422CD9000AFD2D6 /* TypeEntities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TypeEntities.cpp; sourceTree = "<group>"; };
+		2B868D7D2422CD9000AFD2D6 /* TypeEntities.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TypeEntities.hpp; sourceTree = "<group>"; };
+		2B868D7F2422CE1800AFD2D6 /* Noncopyable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Noncopyable.h; sourceTree = "<group>"; };
+		2B868D802422D01200AFD2D6 /* TypeVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeVisitor.h; sourceTree = "<group>"; };
+		2B868D81242370CD00AFD2D6 /* MetaFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MetaFactory.cpp; sourceTree = "<group>"; };
+		2B868D82242370CD00AFD2D6 /* MetaFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MetaFactory.hpp; sourceTree = "<group>"; };
+		2B868D84242375E100AFD2D6 /* CreationException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreationException.h; sourceTree = "<group>"; };
+		2B868D8524238A3600AFD2D6 /* TypeFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeFactory.h; sourceTree = "<group>"; };
+		2B868D8624238A3600AFD2D6 /* TypeFactory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = TypeFactory.cpp; sourceTree = "<group>"; };
+		2B868DAB2423ED2200AFD2D6 /* Demangler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Demangler.cpp; sourceTree = "<group>"; };
+		2B868DAC2423ED2200AFD2D6 /* Demangler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Demangler.hpp; sourceTree = "<group>"; };
 		2BF46796235B778F00EFD089 /* EmbeddingSourceKitGuide */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EmbeddingSourceKitGuide; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BF46799235B778F00EFD089 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2BF46799235B778F00EFD089 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		2BF467A5235B7B1700EFD089 /* sourcekitd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sourcekitd.h; sourceTree = "<group>"; };
+		2BF467A7235B864D00EFD089 /* sourcekitd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sourcekitd.framework; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/sourcekitd.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF467A8235B864D00EFD089 /* sourcekitd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +65,10 @@
 		2BF4678D235B778F00EFD089 = {
 			isa = PBXGroup;
 			children = (
+				2BF467A4235B7B0600EFD089 /* sourcekit */,
 				2BF46798235B778F00EFD089 /* EmbeddingSourceKitGuide */,
 				2BF46797235B778F00EFD089 /* Products */,
+				2BF467A1235B79AD00EFD089 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +83,38 @@
 		2BF46798235B778F00EFD089 /* EmbeddingSourceKitGuide */ = {
 			isa = PBXGroup;
 			children = (
-				2BF46799235B778F00EFD089 /* main.c */,
+				2BF46799235B778F00EFD089 /* main.mm */,
+				2B693874241D925C00CF7A1A /* SwiftMetaEntity.cpp */,
+				2B693875241D925C00CF7A1A /* SwiftMetaEntity.hpp */,
+				2B868D7C2422CD9000AFD2D6 /* TypeEntities.cpp */,
+				2B868DAB2423ED2200AFD2D6 /* Demangler.cpp */,
+				2B868DAC2423ED2200AFD2D6 /* Demangler.hpp */,
+				2B868D7D2422CD9000AFD2D6 /* TypeEntities.hpp */,
+				2B868D802422D01200AFD2D6 /* TypeVisitor.h */,
+				2B868D7F2422CE1800AFD2D6 /* Noncopyable.h */,
+				2B868D81242370CD00AFD2D6 /* MetaFactory.cpp */,
+				2B868D82242370CD00AFD2D6 /* MetaFactory.hpp */,
+				2B868D8524238A3600AFD2D6 /* TypeFactory.h */,
+				2B868D8624238A3600AFD2D6 /* TypeFactory.cpp */,
+				2B868D84242375E100AFD2D6 /* CreationException.h */,
 			);
 			path = EmbeddingSourceKitGuide;
+			sourceTree = "<group>";
+		};
+		2BF467A1235B79AD00EFD089 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BF467A7235B864D00EFD089 /* sourcekitd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BF467A4235B7B0600EFD089 /* sourcekit */ = {
+			isa = PBXGroup;
+			children = (
+				2BF467A5235B7B1700EFD089 /* sourcekitd.h */,
+			);
+			path = sourcekit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,9 +124,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BF4679D235B778F00EFD089 /* Build configuration list for PBXNativeTarget "EmbeddingSourceKitGuide" */;
 			buildPhases = (
+				2BF46794235B778F00EFD089 /* CopyFiles */,
 				2BF46792235B778F00EFD089 /* Sources */,
 				2BF46793235B778F00EFD089 /* Frameworks */,
-				2BF46794235B778F00EFD089 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -119,7 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BF4679A235B778F00EFD089 /* main.c in Sources */,
+				2B868D7E2422CD9000AFD2D6 /* TypeEntities.cpp in Sources */,
+				2BF4679A235B778F00EFD089 /* main.mm in Sources */,
+				2B693876241D925C00CF7A1A /* SwiftMetaEntity.cpp in Sources */,
+				2B868D83242370CD00AFD2D6 /* MetaFactory.cpp in Sources */,
+				2B868D8724238A3600AFD2D6 /* TypeFactory.cpp in Sources */,
+				2B868DAD2423ED2200AFD2D6 /* Demangler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +301,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
 				ENABLE_HARDENED_RUNTIME = YES;
+				OTHER_LDFLAGS = (
+					"-iframework",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +315,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
 				ENABLE_HARDENED_RUNTIME = YES;
+				OTHER_LDFLAGS = (
+					"-iframework",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
