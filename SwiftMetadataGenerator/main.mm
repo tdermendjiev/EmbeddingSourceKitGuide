@@ -86,7 +86,10 @@ sourcekitd_variant_dictionary_applier_t applier = ^(sourcekitd_uid_t key, source
             if (type2 == SOURCEKITD_VARIANT_TYPE_DICTIONARY) {
                 checkObject(&value2);
                 Meta* meta = _metaFactory->create(value2);
-                metaEntities.push_back(meta);
+                if (meta) {
+                    metaEntities.push_back(meta);
+                }
+                
                 
 //                sourcekitd_variant_dictionary_apply(value2, applier);
             }

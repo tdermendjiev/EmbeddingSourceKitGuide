@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2B693876241D925C00CF7A1A /* SwiftMetaEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B693874241D925C00CF7A1A /* SwiftMetaEntity.cpp */; };
+		2B719FB1244AE941000DAD63 /* binaryHashtable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FAF244AE941000DAD63 /* binaryHashtable.cpp */; };
+		2B719FB4244AE9A4000DAD63 /* binaryStructures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FB2244AE9A4000DAD63 /* binaryStructures.cpp */; };
+		2B719FB7244AECFC000DAD63 /* metaFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FB5244AECFC000DAD63 /* metaFile.cpp */; };
+		2B719FBB244AED83000DAD63 /* memoryStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FB9244AED82000DAD63 /* memoryStream.cpp */; };
 		2B868D7E2422CD9000AFD2D6 /* TypeEntities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868D7C2422CD9000AFD2D6 /* TypeEntities.cpp */; };
 		2B868D83242370CD00AFD2D6 /* MetaFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868D81242370CD00AFD2D6 /* MetaFactory.cpp */; };
 		2B868D8724238A3600AFD2D6 /* TypeFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868D8624238A3600AFD2D6 /* TypeFactory.cpp */; };
@@ -33,6 +37,15 @@
 /* Begin PBXFileReference section */
 		2B693874241D925C00CF7A1A /* SwiftMetaEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SwiftMetaEntity.cpp; sourceTree = "<group>"; };
 		2B693875241D925C00CF7A1A /* SwiftMetaEntity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SwiftMetaEntity.hpp; sourceTree = "<group>"; };
+		2B719FAF244AE941000DAD63 /* binaryHashtable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binaryHashtable.cpp; sourceTree = "<group>"; };
+		2B719FB0244AE941000DAD63 /* binaryHashtable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = binaryHashtable.hpp; sourceTree = "<group>"; };
+		2B719FB2244AE9A4000DAD63 /* binaryStructures.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binaryStructures.cpp; sourceTree = "<group>"; };
+		2B719FB3244AE9A4000DAD63 /* binaryStructures.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = binaryStructures.hpp; sourceTree = "<group>"; };
+		2B719FB5244AECFC000DAD63 /* metaFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = metaFile.cpp; sourceTree = "<group>"; };
+		2B719FB6244AECFC000DAD63 /* metaFile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = metaFile.hpp; sourceTree = "<group>"; };
+		2B719FB9244AED82000DAD63 /* memoryStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = memoryStream.cpp; sourceTree = "<group>"; };
+		2B719FBA244AED82000DAD63 /* memoryStream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = memoryStream.hpp; sourceTree = "<group>"; };
+		2B719FBC244AED9C000DAD63 /* stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stream.h; sourceTree = "<group>"; };
 		2B868D7C2422CD9000AFD2D6 /* TypeEntities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TypeEntities.cpp; sourceTree = "<group>"; };
 		2B868D7D2422CD9000AFD2D6 /* TypeEntities.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TypeEntities.hpp; sourceTree = "<group>"; };
 		2B868D7F2422CE1800AFD2D6 /* Noncopyable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Noncopyable.h; sourceTree = "<group>"; };
@@ -44,7 +57,7 @@
 		2B868D8624238A3600AFD2D6 /* TypeFactory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = TypeFactory.cpp; sourceTree = "<group>"; };
 		2B868DAB2423ED2200AFD2D6 /* Demangler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Demangler.cpp; sourceTree = "<group>"; };
 		2B868DAC2423ED2200AFD2D6 /* Demangler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Demangler.hpp; sourceTree = "<group>"; };
-		2BF46796235B778F00EFD089 /* EmbeddingSourceKitGuide */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EmbeddingSourceKitGuide; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF46796235B778F00EFD089 /* SwiftMetadataGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftMetadataGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF46799235B778F00EFD089 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		2BF467A5235B7B1700EFD089 /* sourcekitd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sourcekitd.h; sourceTree = "<group>"; };
 		2BF467A7235B864D00EFD089 /* sourcekitd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sourcekitd.framework; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/sourcekitd.framework; sourceTree = DEVELOPER_DIR; };
@@ -62,11 +75,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B719FAE244AE919000DAD63 /* Binary */ = {
+			isa = PBXGroup;
+			children = (
+				2B719FAF244AE941000DAD63 /* binaryHashtable.cpp */,
+				2B719FB0244AE941000DAD63 /* binaryHashtable.hpp */,
+				2B719FB2244AE9A4000DAD63 /* binaryStructures.cpp */,
+				2B719FB3244AE9A4000DAD63 /* binaryStructures.hpp */,
+				2B719FB5244AECFC000DAD63 /* metaFile.cpp */,
+				2B719FB6244AECFC000DAD63 /* metaFile.hpp */,
+			);
+			path = Binary;
+			sourceTree = "<group>";
+		};
+		2B719FB8244AED6D000DAD63 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2B719FB9244AED82000DAD63 /* memoryStream.cpp */,
+				2B719FBA244AED82000DAD63 /* memoryStream.hpp */,
+				2B719FBC244AED9C000DAD63 /* stream.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		2BF4678D235B778F00EFD089 = {
 			isa = PBXGroup;
 			children = (
 				2BF467A4235B7B0600EFD089 /* sourcekit */,
-				2BF46798235B778F00EFD089 /* EmbeddingSourceKitGuide */,
+				2BF46798235B778F00EFD089 /* SwiftMetadataGenerator */,
 				2BF46797235B778F00EFD089 /* Products */,
 				2BF467A1235B79AD00EFD089 /* Frameworks */,
 			);
@@ -75,14 +111,16 @@
 		2BF46797235B778F00EFD089 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BF46796235B778F00EFD089 /* EmbeddingSourceKitGuide */,
+				2BF46796235B778F00EFD089 /* SwiftMetadataGenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2BF46798235B778F00EFD089 /* EmbeddingSourceKitGuide */ = {
+		2BF46798235B778F00EFD089 /* SwiftMetadataGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				2B719FB8244AED6D000DAD63 /* Utils */,
+				2B719FAE244AE919000DAD63 /* Binary */,
 				2BF46799235B778F00EFD089 /* main.mm */,
 				2B693874241D925C00CF7A1A /* SwiftMetaEntity.cpp */,
 				2B693875241D925C00CF7A1A /* SwiftMetaEntity.hpp */,
@@ -98,7 +136,7 @@
 				2B868D8624238A3600AFD2D6 /* TypeFactory.cpp */,
 				2B868D84242375E100AFD2D6 /* CreationException.h */,
 			);
-			path = EmbeddingSourceKitGuide;
+			path = SwiftMetadataGenerator;
 			sourceTree = "<group>";
 		};
 		2BF467A1235B79AD00EFD089 /* Frameworks */ = {
@@ -120,9 +158,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BF46795235B778F00EFD089 /* EmbeddingSourceKitGuide */ = {
+		2BF46795235B778F00EFD089 /* SwiftMetadataGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BF4679D235B778F00EFD089 /* Build configuration list for PBXNativeTarget "EmbeddingSourceKitGuide" */;
+			buildConfigurationList = 2BF4679D235B778F00EFD089 /* Build configuration list for PBXNativeTarget "SwiftMetadataGenerator" */;
 			buildPhases = (
 				2BF46794235B778F00EFD089 /* CopyFiles */,
 				2BF46792235B778F00EFD089 /* Sources */,
@@ -132,9 +170,9 @@
 			);
 			dependencies = (
 			);
-			name = EmbeddingSourceKitGuide;
+			name = SwiftMetadataGenerator;
 			productName = EmbeddingSourceKitGuide;
-			productReference = 2BF46796235B778F00EFD089 /* EmbeddingSourceKitGuide */;
+			productReference = 2BF46796235B778F00EFD089 /* SwiftMetadataGenerator */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -151,7 +189,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2BF46791235B778F00EFD089 /* Build configuration list for PBXProject "EmbeddingSourceKitGuide" */;
+			buildConfigurationList = 2BF46791235B778F00EFD089 /* Build configuration list for PBXProject "SwiftMetadataGenerator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -164,7 +202,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BF46795235B778F00EFD089 /* EmbeddingSourceKitGuide */,
+				2BF46795235B778F00EFD089 /* SwiftMetadataGenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -176,9 +214,13 @@
 			files = (
 				2B868D7E2422CD9000AFD2D6 /* TypeEntities.cpp in Sources */,
 				2BF4679A235B778F00EFD089 /* main.mm in Sources */,
+				2B719FB1244AE941000DAD63 /* binaryHashtable.cpp in Sources */,
 				2B693876241D925C00CF7A1A /* SwiftMetaEntity.cpp in Sources */,
+				2B719FBB244AED83000DAD63 /* memoryStream.cpp in Sources */,
 				2B868D83242370CD00AFD2D6 /* MetaFactory.cpp in Sources */,
 				2B868D8724238A3600AFD2D6 /* TypeFactory.cpp in Sources */,
+				2B719FB7244AECFC000DAD63 /* metaFile.cpp in Sources */,
+				2B719FB4244AE9A4000DAD63 /* binaryStructures.cpp in Sources */,
 				2B868DAD2423ED2200AFD2D6 /* Demangler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BF46791235B778F00EFD089 /* Build configuration list for PBXProject "EmbeddingSourceKitGuide" */ = {
+		2BF46791235B778F00EFD089 /* Build configuration list for PBXProject "SwiftMetadataGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BF4679B235B778F00EFD089 /* Debug */,
@@ -335,7 +377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BF4679D235B778F00EFD089 /* Build configuration list for PBXNativeTarget "EmbeddingSourceKitGuide" */ = {
+		2BF4679D235B778F00EFD089 /* Build configuration list for PBXNativeTarget "SwiftMetadataGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BF4679E235B778F00EFD089 /* Debug */,

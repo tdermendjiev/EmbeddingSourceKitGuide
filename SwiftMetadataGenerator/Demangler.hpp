@@ -13,12 +13,14 @@
 #include <dlfcn.h>
 
 class Demangler {
-    
+public:
     bool demangleFunction(const char* input, char* output) {
         size_t result = demangle(input, output,
-                         sizeof(output));
+                         256);
         return result > 0;
     }
+    
+    
     
     Demangler() {
         handle = dlopen(DemangleLibPath, RTLD_NOW);

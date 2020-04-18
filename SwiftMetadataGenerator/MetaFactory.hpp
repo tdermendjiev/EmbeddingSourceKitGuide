@@ -16,6 +16,7 @@
 #include "sourcekitd.h"
 #include "CreationException.h"
 #include "TypeFactory.h"
+#include "Demangler.hpp"
 
 typedef std::unordered_map<const sourcekitd_variant_t*, std::pair<std::unique_ptr<Meta>, std::unique_ptr<CreationException>> > Cache;
 typedef std::unordered_map<const Meta*, const sourcekitd_variant_t*> MetaToDeclMap;
@@ -25,6 +26,7 @@ public:
     MetaFactory():
         _typeFactory(this)
     {
+        _demangler = Demangler();
     }
 
     Meta* create(const sourcekitd_variant_t& decl, bool resetCached = false);
@@ -60,16 +62,20 @@ private:
 //
 //    void createFromProperty(const clang::ObjCPropertyDecl& property, PropertyMeta& propertyMeta);
 //
-    void populateIdentificationFields(const sourcekitd_variant_t& decl, Meta& meta);
+    void populateIdentificationFields(const sourcekitd_variant_t& decl, Meta* meta);
 //
-    void populateMetaFields(const sourcekitd_variant_t& decl, Meta& meta);
+    void populateMetaFields(const sourcekitd_variant_t& decl, Meta* meta);
 //
 //    void populateBaseClassMetaFields(const clang::ObjCContainerDecl& decl, BaseClassMeta& baseClassMeta);
+    
+    void pushReturnType(SwiftFunction* meta, std::string returnTypeString);
+    
+    bool populateSignature(SwiftFunction* meta, const char* demangledName);
 
     TypeFactory _typeFactory;
     Cache _cache;
     MetaToDeclMap _metaToDecl;
-
+    Demangler _demangler;
 };
 
 #endif /* MetaFactory_hpp */

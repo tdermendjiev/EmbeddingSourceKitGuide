@@ -27,6 +27,8 @@ public:
     static std::shared_ptr<Type> getVoid();
 
     static std::shared_ptr<Type> getBool();
+    
+    static std::shared_ptr<Type> getInstanceType();
 
     std::shared_ptr<Type> create(const std::string type);
 

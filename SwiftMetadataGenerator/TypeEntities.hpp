@@ -23,6 +23,7 @@ enum TypeType {
     TypeClass,
     TypeArray,
     TypePointer,
+    TypeInstanceType,
     TypeBlock,
     TypeFunctionPointer,
     TypeInterface,
