@@ -7,11 +7,14 @@
 //
 
 #include "TypeFactory.h"
+namespace Meta {
 
 shared_ptr<Type> TypeFactory::getInstanceType()
 {
     static shared_ptr<Type> type(new Type(TypeType::TypeInstanceType));
     return type;
+}
+
 }
 
 

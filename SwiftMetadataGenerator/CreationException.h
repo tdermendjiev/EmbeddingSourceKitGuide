@@ -12,6 +12,8 @@
 #include "SwiftMetaEntity.hpp"
 #include <string>
 
+namespace Meta {
+
 class CreationException {
 public:
     static std::string constructMessage(std::string outerMessage, std::string innerMessage)
@@ -72,5 +74,6 @@ public:
 private:
     const Meta* _meta;
 };
+}
 
 #endif /* CreationException_h */

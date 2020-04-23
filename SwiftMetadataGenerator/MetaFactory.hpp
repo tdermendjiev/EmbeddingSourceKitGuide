@@ -18,6 +18,8 @@
 #include "TypeFactory.h"
 #include "Demangler.hpp"
 
+namespace Meta {
+
 typedef std::unordered_map<const sourcekitd_variant_t*, std::pair<std::unique_ptr<Meta>, std::unique_ptr<CreationException>> > Cache;
 typedef std::unordered_map<const Meta*, const sourcekitd_variant_t*> MetaToDeclMap;
 
@@ -77,5 +79,7 @@ private:
     MetaToDeclMap _metaToDecl;
     Demangler _demangler;
 };
+
+}
 
 #endif /* MetaFactory_hpp */

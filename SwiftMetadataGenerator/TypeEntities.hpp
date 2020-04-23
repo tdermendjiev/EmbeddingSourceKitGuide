@@ -13,6 +13,8 @@
 #include "Noncopyable.h"
 #include "TypeVisitor.h"
 
+namespace Meta {
+
 enum TypeType {
     TypeVoid,
     TypeBool,
@@ -69,14 +71,14 @@ public:
         switch (this->type) {
         case TypeVoid:
             return visitor.visitVoid();
-        case TypeBool:
-            return visitor.visitBool();
-        case TypeInt:
-            return visitor.visitInt();
-        case TypeFloat:
-            return visitor.visitFloat();
-        case TypeDouble:
-            return visitor.visitDouble();
+//        case TypeBool:
+//            return visitor.visitBool();
+//        case TypeInt:
+//            return visitor.visitInt();
+//        case TypeFloat:
+//            return visitor.visitFloat();
+//        case TypeDouble:
+//            return visitor.visitDouble();
         default:
                 return nullptr;
                 
@@ -87,5 +89,7 @@ public:
 protected:
     TypeType type;
 };
+
+}
 
 #endif /* TypeEntities_hpp */

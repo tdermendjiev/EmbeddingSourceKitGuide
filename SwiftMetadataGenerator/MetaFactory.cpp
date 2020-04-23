@@ -10,6 +10,8 @@
 #include <iostream>
 #include <stack>
 
+namespace Meta {
+
 std::string stringForKey(const sourcekitd_variant_t* object, std::string key) {
     char* result = sourcekitd_variant_description_copy(sourcekitd_variant_dictionary_get_value(*object, sourcekitd_uid_get_from_cstr(key.c_str())));
     return string(result);
@@ -158,6 +160,8 @@ void MetaFactory::populateMetaFields(const sourcekitd_variant_t& decl, Meta* met
 
 std::string getFunctionReturnType(const sourcekitd_variant_t& function) {
     return "";
+}
+
 }
 
 

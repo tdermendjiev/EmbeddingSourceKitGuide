@@ -12,6 +12,8 @@
 #include <stdio.h>
 #include "binaryHashtable.hpp"
 #include "memoryStream.hpp"
+#include "binaryReader.hpp"
+#include "binaryWriter.hpp"
 
 namespace binary {
 
@@ -31,6 +33,24 @@ public:
     MetaFile() : MetaFile(10) { }
     
     unsigned int size();
+    
+    BinaryWriter heap_writer();
+    /*
+         * \brief Creates a \c BinaryReader for this file heap
+         */
+    BinaryReader heap_reader();
+
+    /// I/O
+    /*
+         * \brief Writes this file to the filesystem with the specified name.
+         * \param filename The filename of the output file
+         */
+    void save(std::string filename);
+    /*
+         * \brief Writes this file to a stream.
+         * \param stream
+         */
+    void save(std::shared_ptr<utils::Stream> stream);
     
     
 };

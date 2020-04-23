@@ -3,7 +3,10 @@
 #include "SwiftMetaEntity.hpp"
 #include <vector>
 #include "MetaFactory.hpp"
+#include "metaFile.hpp"
+#include "binarySerializer.hpp"
 
+namespace Meta {
 
 std::vector<SwiftClass*> classes;
 std::vector<SwiftFunction*> freeFunctions;
@@ -55,19 +58,19 @@ SwiftFunction* createFunction(sourcekitd_variant_t* obj) {
     return nullptr;
 }
 
-void checkObject(sourcekitd_variant_t* obj) {
-    char* kindName = sourcekitd_variant_description_copy(sourcekitd_variant_dictionary_get_value(*obj, sourcekitd_uid_get_from_cstr("key.kind")));
-    
-    if (strcmp(kindName, "source.lang.swift.decl.class") == 0) {
-        Meta* meta = createClass(obj);
-        metaEntities.push_back(meta);
-    } else if (strcmp(kindName, "source.lang.swift.decl.function.free") == 0) {
-        freeFunctions.push_back(createFunction(obj));
-    } else if (strcmp(kindName, "source.lang.swift.decl.function.method.instance") == 0) {
-//        should throw
-        
-    }
-}
+//void checkObject(sourcekitd_variant_t* obj) {
+//    char* kindName = sourcekitd_variant_description_copy(sourcekitd_variant_dictionary_get_value(*obj, sourcekitd_uid_get_from_cstr("key.kind")));
+//
+//    if (strcmp(kindName, "source.lang.swift.decl.class") == 0) {
+//        Meta* meta = createClass(obj);
+//        metaEntities.push_back(meta);
+//    } else if (strcmp(kindName, "source.lang.swift.decl.function.free") == 0) {
+//        freeFunctions.push_back(createFunction(obj));
+//    } else if (strcmp(kindName, "source.lang.swift.decl.function.method.instance") == 0) {
+////        should throw
+//
+//    }
+//}
 
 
 
@@ -84,7 +87,7 @@ sourcekitd_variant_dictionary_applier_t applier = ^(sourcekitd_uid_t key, source
             sourcekitd_variant_t value2 = sourcekitd_variant_array_get_value(value, i);
             sourcekitd_variant_type_t type2 = sourcekitd_variant_get_type(value2);
             if (type2 == SOURCEKITD_VARIANT_TYPE_DICTIONARY) {
-                checkObject(&value2);
+//                checkObject(&value2);
                 Meta* meta = _metaFactory->create(value2);
                 if (meta) {
                     metaEntities.push_back(meta);
@@ -99,11 +102,12 @@ sourcekitd_variant_dictionary_applier_t applier = ^(sourcekitd_uid_t key, source
 //        std::cout << " value" << sourcekitd_variant_description_copy(value) << "\n";
        return true;
 };
+}
 
 int main(int argc, const char * argv[]) {
     sourcekitd_initialize();
     
-    _metaFactory = new MetaFactory();
+    Meta::_metaFactory = new Meta::MetaFactory();
     
     // 1. Construct the request dictionary
     const char* filePath = "/Users/teodordermendzhiev/workspace/ios-runtime/examples/Gameraww/SwiftClass.swift";
@@ -133,12 +137,22 @@ int main(int argc, const char * argv[]) {
 
     } else {
          sourcekitd_variant_t value = sourcekitd_response_get_value(reply);
-         sourcekitd_variant_dictionary_apply(value, applier);
+         sourcekitd_variant_dictionary_apply(value, Meta::applier);
          char* res = sourcekitd_response_description_copy(reply);
          std::cout << res << "\n";
+        
+        // Serialize Meta objects to binary metadata
+//        if (!cla_outputBinFile.empty()) {
+            binary::MetaFile file(Meta::metaEntities.size() / 10); // Average number of hash collisions: 10 per bucket
+            binary::BinarySerializer serializer(&file);
+            serializer.serializeContainer(Meta::metaEntities);
+//            file.save(cla_outputBinFile);
+//        }
     }
 //    sourcekitd_response_description_dump(reply);
     return 0;
  }
+
+
 
     

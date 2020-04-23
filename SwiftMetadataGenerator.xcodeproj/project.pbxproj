@@ -12,6 +12,10 @@
 		2B719FB4244AE9A4000DAD63 /* binaryStructures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FB2244AE9A4000DAD63 /* binaryStructures.cpp */; };
 		2B719FB7244AECFC000DAD63 /* metaFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FB5244AECFC000DAD63 /* metaFile.cpp */; };
 		2B719FBB244AED83000DAD63 /* memoryStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FB9244AED82000DAD63 /* memoryStream.cpp */; };
+		2B719FC024506FAE000DAD63 /* binarySerializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FBE24506FAE000DAD63 /* binarySerializer.cpp */; };
+		2B719FC32450701A000DAD63 /* binaryTypeEncodingSerializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FC12450701A000DAD63 /* binaryTypeEncodingSerializer.cpp */; };
+		2B719FC624507060000DAD63 /* binaryWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FC424507060000DAD63 /* binaryWriter.cpp */; };
+		2B719FCC24507942000DAD63 /* binaryReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B719FCA24507942000DAD63 /* binaryReader.cpp */; };
 		2B868D7E2422CD9000AFD2D6 /* TypeEntities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868D7C2422CD9000AFD2D6 /* TypeEntities.cpp */; };
 		2B868D83242370CD00AFD2D6 /* MetaFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868D81242370CD00AFD2D6 /* MetaFactory.cpp */; };
 		2B868D8724238A3600AFD2D6 /* TypeFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B868D8624238A3600AFD2D6 /* TypeFactory.cpp */; };
@@ -46,6 +50,16 @@
 		2B719FB9244AED82000DAD63 /* memoryStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = memoryStream.cpp; sourceTree = "<group>"; };
 		2B719FBA244AED82000DAD63 /* memoryStream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = memoryStream.hpp; sourceTree = "<group>"; };
 		2B719FBC244AED9C000DAD63 /* stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stream.h; sourceTree = "<group>"; };
+		2B719FBD24506F59000DAD63 /* MetaVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetaVisitor.h; sourceTree = "<group>"; };
+		2B719FBE24506FAE000DAD63 /* binarySerializer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binarySerializer.cpp; sourceTree = "<group>"; };
+		2B719FBF24506FAE000DAD63 /* binarySerializer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = binarySerializer.hpp; sourceTree = "<group>"; };
+		2B719FC12450701A000DAD63 /* binaryTypeEncodingSerializer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binaryTypeEncodingSerializer.cpp; sourceTree = "<group>"; };
+		2B719FC22450701A000DAD63 /* binaryTypeEncodingSerializer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = binaryTypeEncodingSerializer.hpp; sourceTree = "<group>"; };
+		2B719FC424507060000DAD63 /* binaryWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binaryWriter.cpp; sourceTree = "<group>"; };
+		2B719FC524507060000DAD63 /* binaryWriter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = binaryWriter.hpp; sourceTree = "<group>"; };
+		2B719FC82450708F000DAD63 /* binaryOperation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = binaryOperation.hpp; sourceTree = "<group>"; };
+		2B719FCA24507942000DAD63 /* binaryReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binaryReader.cpp; sourceTree = "<group>"; };
+		2B719FCB24507942000DAD63 /* binaryReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = binaryReader.hpp; sourceTree = "<group>"; };
 		2B868D7C2422CD9000AFD2D6 /* TypeEntities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TypeEntities.cpp; sourceTree = "<group>"; };
 		2B868D7D2422CD9000AFD2D6 /* TypeEntities.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TypeEntities.hpp; sourceTree = "<group>"; };
 		2B868D7F2422CE1800AFD2D6 /* Noncopyable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Noncopyable.h; sourceTree = "<group>"; };
@@ -84,6 +98,15 @@
 				2B719FB3244AE9A4000DAD63 /* binaryStructures.hpp */,
 				2B719FB5244AECFC000DAD63 /* metaFile.cpp */,
 				2B719FB6244AECFC000DAD63 /* metaFile.hpp */,
+				2B719FBE24506FAE000DAD63 /* binarySerializer.cpp */,
+				2B719FBF24506FAE000DAD63 /* binarySerializer.hpp */,
+				2B719FC12450701A000DAD63 /* binaryTypeEncodingSerializer.cpp */,
+				2B719FC22450701A000DAD63 /* binaryTypeEncodingSerializer.hpp */,
+				2B719FC424507060000DAD63 /* binaryWriter.cpp */,
+				2B719FC524507060000DAD63 /* binaryWriter.hpp */,
+				2B719FCA24507942000DAD63 /* binaryReader.cpp */,
+				2B719FCB24507942000DAD63 /* binaryReader.hpp */,
+				2B719FC82450708F000DAD63 /* binaryOperation.hpp */,
 			);
 			path = Binary;
 			sourceTree = "<group>";
@@ -135,6 +158,7 @@
 				2B868D8524238A3600AFD2D6 /* TypeFactory.h */,
 				2B868D8624238A3600AFD2D6 /* TypeFactory.cpp */,
 				2B868D84242375E100AFD2D6 /* CreationException.h */,
+				2B719FBD24506F59000DAD63 /* MetaVisitor.h */,
 			);
 			path = SwiftMetadataGenerator;
 			sourceTree = "<group>";
@@ -215,12 +239,16 @@
 				2B868D7E2422CD9000AFD2D6 /* TypeEntities.cpp in Sources */,
 				2BF4679A235B778F00EFD089 /* main.mm in Sources */,
 				2B719FB1244AE941000DAD63 /* binaryHashtable.cpp in Sources */,
+				2B719FCC24507942000DAD63 /* binaryReader.cpp in Sources */,
 				2B693876241D925C00CF7A1A /* SwiftMetaEntity.cpp in Sources */,
 				2B719FBB244AED83000DAD63 /* memoryStream.cpp in Sources */,
 				2B868D83242370CD00AFD2D6 /* MetaFactory.cpp in Sources */,
+				2B719FC32450701A000DAD63 /* binaryTypeEncodingSerializer.cpp in Sources */,
 				2B868D8724238A3600AFD2D6 /* TypeFactory.cpp in Sources */,
 				2B719FB7244AECFC000DAD63 /* metaFile.cpp in Sources */,
 				2B719FB4244AE9A4000DAD63 /* binaryStructures.cpp in Sources */,
+				2B719FC624507060000DAD63 /* binaryWriter.cpp in Sources */,
+				2B719FC024506FAE000DAD63 /* binarySerializer.cpp in Sources */,
 				2B868DAD2423ED2200AFD2D6 /* Demangler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

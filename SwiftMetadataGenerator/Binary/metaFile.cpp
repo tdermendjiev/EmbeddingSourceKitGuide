@@ -8,4 +8,12 @@
 
 #include "metaFile.hpp"
 
+binary::BinaryWriter binary::MetaFile::heap_writer()
+{
+    return binary::BinaryWriter(this->_heap);
+}
 
+binary::BinaryReader binary::MetaFile::heap_reader()
+{
+    return binary::BinaryReader(this->_heap);
+}

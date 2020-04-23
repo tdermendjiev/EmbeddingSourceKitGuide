@@ -14,13 +14,13 @@ class TypeVisitor {
 public:
     virtual T_RESULT visitVoid() = 0;
 
-    virtual T_RESULT visitBool() = 0;
-
-    virtual T_RESULT visitInt() = 0;
-
-    virtual T_RESULT visitFloat() = 0;
-
-    virtual T_RESULT visitDouble() = 0;
+//    virtual T_RESULT visitBool() = 0;
+//
+//    virtual T_RESULT visitInt() = 0;
+//
+//    virtual T_RESULT visitFloat() = 0;
+//
+//    virtual T_RESULT visitDouble() = 0;
 };
 
 

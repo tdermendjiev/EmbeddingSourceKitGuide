@@ -18,6 +18,8 @@
 
 using namespace std;
 
+namespace Meta {
+
 enum MetaType {
     Undefined = 0,
     Interface,
@@ -73,6 +75,7 @@ public:
     vector<SwiftMethod*> instanceMethods;
     vector<SwiftClass*> innerClasses;
 };
+}
 
 
 

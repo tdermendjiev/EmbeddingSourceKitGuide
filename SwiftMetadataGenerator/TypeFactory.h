@@ -14,6 +14,7 @@
 #include "SwiftMetaEntity.hpp"
 #include "TypeEntities.hpp"
 
+namespace Meta {
 class MetaFactory;
 
 class TypeFactory {
@@ -37,5 +38,6 @@ private:
     typedef std::unordered_map<std::string, std::pair<std::shared_ptr<Type>, std::unique_ptr<CreationException> > > Cache;
     Cache _cache;
 };
+}
 
 #endif /* TypeFactory_h */
